@@ -1,0 +1,129 @@
+.pokemon-card {
+  width: 20rem;
+  height: 30rem;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  padding: 1rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+  position: relative;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  cursor: pointer;
+
+  &.pokemon-card-flipped {
+    transform: rotateY(180deg);
+  }
+
+  &:hover {
+    box-shadow: 0 3px 16px rgba(0, 0, 0, 0.5);
+
+    .icon {
+      filter: saturate(200%);
+    }
+  }
+
+  .pokemon-card-face {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    backface-visibility: hidden;
+    width: calc(100% - 2rem);
+    height: calc(100% - 2rem);
+    background-color: white;
+  }
+
+  .pokemon-card-face-front {
+    transform: translate3d(0,0,0);
+  }
+
+  .pokemon-card-face-back {
+    transform: rotateY(180deg);
+    align-items: flex-start;
+  }
+
+  .pokemon-avatar {
+    width: 15rem;
+    height: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 2rem;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(black, 0.2);
+    margin-top: auto;
+
+    & > div {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+
+  table {
+    border-spacing: 0px;
+    border-collapse: collapse;
+
+    thead, th, tr {
+      padding: 0px;
+      text-align: start;
+    }
+
+    tr {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    }
+    th, td {
+      padding: 0.5rem 0rem;
+    }
+  }
+
+  .combat-icon {
+    width: 2rem;
+    margin-right: 0.25rem;
+  }
+
+  .health-icon {
+    width: 1.75rem;
+    margin-right: 0.5rem;
+  }
+
+  .flee-icon {
+    width: 1.75rem;
+    margin-right: 0.25rem;
+  }
+
+  .details-section {
+    text-align: start;
+    width: 100%;
+    margin-top: 0.75rem;
+
+    .details {
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+      margin-top: 0.5rem;
+    }
+  }
+}

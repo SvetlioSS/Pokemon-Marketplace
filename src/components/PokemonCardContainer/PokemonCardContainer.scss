@@ -1,0 +1,13 @@
+.pokemon-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 90%;
+  margin: 0 auto;
+
+  @media only screen and (max-width: 1080px) {
+    width: 95%;
+  }
+}

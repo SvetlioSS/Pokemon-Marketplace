@@ -1,6 +1,6 @@
 .pokemon-card {
   width: 20rem;
-  height: 30rem;
+  height: 34rem;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
@@ -55,6 +55,7 @@
   .pokemon-avatar {
     width: 15rem;
     height: 15rem;
+    margin-top: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -157,7 +158,7 @@
 
     .details {
       font-weight: 700;
-      margin-bottom: 0.75rem;
+      margin-bottom: 0.25rem;
       margin-top: 0.5rem;
     }
   }

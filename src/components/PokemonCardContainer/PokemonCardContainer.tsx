@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
 
-import Pokemon from '../../interfaces/Pokemon';
+import Pokemon from '../../interfaces/IPokemon';
 import PokemonCard from '../PokemonCard/PokemonCard';
 import './PokemonCardContainer.scss';
+import PokemonsContext from '../../context/PokemonsContext';
 
-function PokemonCardContainer({ pokemons }: { pokemons: Pokemon[] }) {
+function PokemonCardContainer({ filter }: { filter: boolean }) {
+  const [{ pokemons }] = useContext(PokemonsContext);
+
   return (
-    <div className='pokemon-card-container'>
+    <div className={`pokemon-card-container ${filter ? 'filter' : ''}`}>
       {pokemons.map((pokemon: Pokemon) => (
         <PokemonCard pokemon={pokemon} key={pokemon.number}/>
       ))}

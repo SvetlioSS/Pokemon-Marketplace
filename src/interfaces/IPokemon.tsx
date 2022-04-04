@@ -1,7 +1,7 @@
-import PokemonDimension from './PokemonDimension';
+import PokemonDimension from './IPokemonDimension';
 import PokemonType from '../enums/PokemonType';
 
-export default interface Pokemon {
+export default interface IPokemon {
   id: string;
   number: string;
   name: string;

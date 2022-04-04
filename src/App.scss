@@ -31,7 +31,7 @@ button {
   outline: none;
 
   &:hover {
-    background-color: adjust-color(#ffcc01, $lightness: +10);
+    background-color: adjust-color(#ffcc01, $lightness: 15%);
   }
 }
 

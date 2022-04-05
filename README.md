@@ -1,9 +1,32 @@
+# Information
 
 Public URL 
 https://pokemon-marketplace.web.app/
 
-Icons
+Pokemon Icons
 https://github.com/duiker101/pokemon-type-svg-icons
 
-API
+Pokemon GraphQL API
 https://wayfair.github.io/dociql/
+
+# Project scripts
+
+## Start
+````
+yarn install
+yarn start
+````
+## Test
+````
+yarn test
+````
+
+## Build
+````
+yarn build
+````
+
+## Deploy
+````
+yarn deploy
+````

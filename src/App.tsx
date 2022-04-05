@@ -58,7 +58,7 @@ function App() {
   }, [data]);
 
   return (
-    <div className="App">
+    <div className="app">
       <header className='app-header'>
         <img src='assets/logo.svg' alt='Pokemon logo'/>
       </header>

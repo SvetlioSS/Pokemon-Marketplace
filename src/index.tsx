@@ -7,7 +7,6 @@ import App from './App';
 import { POKEMON_GRAPHQL_ENDPOINT } from './config';
 import reportWebVitals from './reportWebVitals';
 
-
 const client = new ApolloClient({
   uri: POKEMON_GRAPHQL_ENDPOINT,
   cache: new InMemoryCache()
